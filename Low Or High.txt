@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void main()
+{
+    float heart_rate,
+    low = 60, high = 100;
+
+    printf("Enter heart rate (BPM): ");
+    scanf("%f", &heart_rate);
+
+    if (heart_rate < low)
+    {
+        printf("Heart rate is low");
+    }
+    else if (heart_rate >= low && heart_rate <= high)
+    {
+        printf("Heart rate is normal");
+    }
+    else
+    {
+        printf("Heart rate is high");
+    }
+}

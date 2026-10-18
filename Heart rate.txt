@@ -1,0 +1,27 @@
+#include<stdio.h>
+void main()
+{
+    int heart_rate;
+    int threshold1 = 60;
+    int threshold2 = 100;
+
+    clrscr();
+
+    printf("Enter heart rate (BPM): ");
+    scanf("%d", &heart_rate);
+
+    if(heart_rate >= threshold1 && heart_rate <= threshold2)
+    {
+        printf("Patient condition is normal");
+    }
+    else if(heart_rate < threshold1)
+    {
+        printf("Warning: Heart rate is low");
+    }
+    else
+    {
+        printf("Warning: Heart rate is high");
+    }
+
+    getch();
+}
